@@ -1,7 +1,7 @@
 
 #__________________________________________________#
 __author__ = "Erwan LABADIE"
-__copyright__ = "Copyright 04/2022"
+__copyright__ = "Copyright 11/2022"
 __maintainer__ = "Erwan LABADIE"
 #__________________________________________________#
 
@@ -16,6 +16,7 @@ def Correct_Entry_to_Nb(StringVal):
     StringVal = StringVal.replace(",", ".")
     StringVal = StringVal.replace(" ", "")
     StringVal = StringVal.replace("-", "")
+    StringVal = StringVal.replace("^", "")
 
     if StringVal != "":
         try:
